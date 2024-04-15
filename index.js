@@ -24,7 +24,7 @@ async function saveHackerNewsArticles() {
   // filtering articles to top 10 entries only
   let tenArticles = allArticles.slice(0, 10);
 
-  // write to CSV file
+  // writing to CSV file
   let writeFile = new ObjectsToCsv(tenArticles);
   writeFile.toDisk("./articles.csv");
 }
